@@ -1,0 +1,1 @@
+count = 0; // Reset count for each new element
