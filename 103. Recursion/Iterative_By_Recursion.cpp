@@ -8,7 +8,7 @@
 //         return;
 //     }
 
-//     //* Print value
+//     //* 1 case solve
 //     cout<<arr[i]<<" ";
 
 //     //* Calling
@@ -46,8 +46,6 @@ void maxNum(int arr[], int n, int i, int& max){
 
     //* recursively calling 
     maxNum(arr, n, i+1, max);
-
-    cout<<max<<endl;
 }
 
 int main(){
@@ -59,5 +57,7 @@ int main(){
     int max = INT_MIN;
 
     maxNum(arr, n, i, max);
+
+    cout<<max<<endl;
     return 0;
 }
