@@ -145,30 +145,34 @@ void deleteFromPosition(int position, Node *&head, Node *&tail)
     }
 }
 
-Node* reverseLLRecursive(Node* &head, Node* prev)
+Node *reverseLLRecursive(Node *&head, Node *prev)
 {
-    Node* curr = head;
-    if(curr == nullptr){
+    Node *curr = head;
+    if (curr == nullptr)
+    {
         return prev;
     }
 
-    Node* forward = curr->next;
+    Node *forward = curr->next;
 
     curr->next = prev;
     return reverseLLRecursive(forward, curr);
 }
 
-void reverseLinkedList(Node*& head){
+void reverseLinkedList(Node *&head)
+{
 
-    if(head == nullptr){
+    if (head == nullptr)
+    {
         return;
     }
 
-    Node* prev = nullptr;
-    Node* curr = head;
+    Node *prev = nullptr;
+    Node *curr = head;
 
-    while(curr != nullptr){
-        Node* forward = curr->next;
+    while (curr != nullptr)
+    {
+        Node *forward = curr->next;
         curr->next = prev;
         prev = curr;
         curr = forward;
@@ -177,37 +181,43 @@ void reverseLinkedList(Node*& head){
     head = prev;
 }
 
-Node* getMidNode(Node* head){
-    Node* slow = head;
-    Node* fast = head;
+Node *getMidNode(Node *head)
+{
+    Node *slow = head;
+    Node *fast = head;
 
-    while(fast != nullptr && fast->next != nullptr){
+    while (fast != nullptr && fast->next != nullptr)
+    {
         slow = slow->next;
         fast = fast->next->next;
     }
     return slow;
 }
 
-
-bool checkPelindromeLL(Node* head){
+bool checkPelindromeLL(Node *head)
+{
     int len = getLengthOfLinkedList(head);
 
-    Node* mid = getMidNode(head);
+    Node *mid = getMidNode(head);
 
-    Node* finalMid = nullptr;
+    Node *finalMid = nullptr;
 
-    if(len == 1){
+    if (len == 1)
+    {
         finalMid = mid->next;
     }
-    else{
+    else
+    {
         finalMid = mid;
     }
 
     reverseLinkedList(finalMid);
 
-    Node* temp = head;
-    while(temp != nullptr && finalMid != nullptr){
-        if(temp->data != finalMid->data){
+    Node *temp = head;
+    while (temp != nullptr && finalMid != nullptr)
+    {
+        if (temp->data != finalMid->data)
+        {
             return false;
         }
     }
@@ -231,8 +241,8 @@ int main()
     head = reverseLLRecursive(head, prev);
     printLinkedList(head);
 
-    Node* middle = getMidNode(head);
-    cout<<middle->data;
+    Node *middle = getMidNode(head);
+    cout << middle->data;
 
     // bool result = search(head, 50);
     // if (result)

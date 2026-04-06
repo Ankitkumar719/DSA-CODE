@@ -13,8 +13,9 @@ int fib(int n){
     }
 
     //* recursive relation
-    int ans = fib(n-1) + fib(n-2);
-    return ans;
+    // int ans = fib(n-1) + fib(n-2);
+    // return ans;
+    return fib(n-1) + fib(n-2);
 }
 
 int main(){

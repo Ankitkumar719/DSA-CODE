@@ -55,7 +55,7 @@ int main()
 {
     //^ use (.) in static memory location
     //^ use (->) in dynamic memory location
-    //^ this is a pointer to a current object(current member function) or object jo parameter pass kiye hai usko (->) se denote karte hai
+    //^ 'this' is a pointer to a current object(current member function) or object jo parameter pass kiye hai usko (->) se denote karte hai
 
 
     //! static memory
