@@ -2,6 +2,17 @@
 #include<string.h>
 using namespace std;
 
+//& int getLength(char name[]){
+//     int length = 0;
+//     int i = 0;
+//
+//     while(name[i] != 0){
+//         length++;
+//         i++;
+//     }
+//     return length;
+// }
+
 //& bool compareString(string a, string b){
 //     if(a.length() != b.length()){
 //         return false;
@@ -18,12 +29,23 @@ using namespace std;
 //     return true;
 // }
 
+//& void reverseCharArray(char name[]){
+//     int i = 0;
+//     int n = getLength(name);
+//     int j = n - 1;
+//
+//     while(i<=j){
+//         swap(name[i], name[j]);
+//         i++;
+//         j--;
+//     }
+// }
 
 //& bool checkPelindrome(char word[]){
 //     int i=0;
 //     int n=strlen(word);
 //     int j=n-1;
-
+//
 //     while(i <= j){
 //         if(word[i] != word[j]){
 //             return false;
@@ -36,39 +58,10 @@ using namespace std;
 //     return true;
 // }
 
-
-
-//& int getLength(char name[]){
-//     int length = 0;
-//     int i = 0;
-
-//     while(name[i] != 0){
-//         length++;
-//         i++;
-//     }
-//     return length;
-// }
-
-
-
-//& int reverseCharArray(char name[]){
-//     int i = 0;
-//     int n = getLength(name);
-//     int j = n - 1;
-
-//     while(i<=j){
-//         swap(name[i], name[j]);
-//         i++;
-//         j--;
-//     }
-// }
-
-
-
 //& void replaceSpaces(char sentence[]){
 //     int i = 0;
 //     int n = strlen(sentence);
-
+//
 //     for(int i = 0; i<n; i++){
 //         if(sentence[i] == ' '){
 //             sentence[i] = '@';
@@ -77,7 +70,7 @@ using namespace std;
 // }
 
 
-// int main(){
+//& int main(){
 
     // char name[] = {"Ankit kumar"};
     // char name[100];

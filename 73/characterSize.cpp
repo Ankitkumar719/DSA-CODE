@@ -6,7 +6,7 @@ int main(){
     // character array;
     char ch[20];
     cout<<"Enter name : ";
-    // cin>>ch;
+    cin>>ch;
     // cin.getline(ch,20); // for taking full line character
     int i=0;
     int size=0;
